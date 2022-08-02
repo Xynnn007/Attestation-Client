@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package attestation;
+
+service RemoteAttestation {
+  rpc getTcbStatus (TcbStatusReq) returns (TcbStatusRes) {}
+}
+
+message TcbStatusReq {
+
+}
+
+message TcbStatusRes {
+  string status = 1;
+}
